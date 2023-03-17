@@ -6,40 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstaCar</title>
     <style>
-        #txtBusca{
+ div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 180px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+
+}
+
+div.img:hover {
+    border: 1px solid #777;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+div.img img {
+    width: 50%;
+    height: auto;
+    text-align: ;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+#divBusca{
+  background-color:#E0EEEE;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:300px;
+  height:32px;
+}
+
+#txtBusca{
   float:left;
   background-color:transparent;
   padding-left:5px;
   font-size:18px;
   border:none;
   height:32px;
-  width:226px;
+  width:191px;
 }
 
 #btnBusca{
+  border:none;
   float:left;
-  cursor:pointer;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:#5F9EA0;
 }
 
 #divBusca img{
   float:left;
 }
-
-#divBusca{
-  border:solid 10px rgba(47, 79, 79, 0.8);
-  border-radius:10px;
-  height:37px;
-  width:400px;
-}
-    </style>
+</style>
 </head>
 <body>
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Explore</h1>
-    <div id="divBusca">
-        <img src="search3.png" alt=""/>
-        <input type="text" id="txtBusca" placeholder="Buscar..."/>
-        <img src="search4.png" alt="" id="btnBusca"/>
-      </div>
-      <img src=""
+ <center> <div id="divBusca">
+    <img src="search3.png" alt=""/>
+    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+    <button id="btnBusca">Buscar</button>
+  </div>
+  <hr>
+
+<div class="img">
+  <a target="_blank" href="911.webp">
+    <img src="911.webp" alt="Fjords" width="300" height="200">
+  </a>
+  <div class="desc">Porsche 911</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="car25.jpg">
+    <img src="car25.jpg" alt="Forest" width="300" height="200">
+  </a>
+  <div class="desc">Golf GTI</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="9b466f0a79a0cf273d77485f5ebc2dce.jpg">
+    <img src="9b466f0a79a0cf273d77485f5ebc2dce.jpg" alt="Northern Lights" width="300" height="200">
+  </a>
+  <div class="desc">Monza Tunado 😎</div>
+
+  <div class="img">
+    <a target="_blank" href="mitsubishi-eclipse-all-asta-l-esemplare-di-fast-furious.jpg">
+      <img src="mitsubishi-eclipse-all-asta-l-esemplare-di-fast-furious.jpg" alt="Northern Lights" width="300" height="200">
+    </a>
+    <div class="desc">Eclipse Velozes Furiosos</div>
+
+    <div class="img">
+      <a target="_blank" href="2018DodgeCharger_exterior04.jpg">
+        <img src="2018DodgeCharger_exterior04.jpg" alt="Northern Lights" width="300" height="200">
+      </a>
+      <div class="desc">Dodge Charger 2018</div>
+</div> </center>
 </body>
 </html>
