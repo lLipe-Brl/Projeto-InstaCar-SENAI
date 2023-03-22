@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaCar</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+    }
+
+    .post {
+        background-color: white;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+        margin: 50px auto;
+        max-width: 600px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .post img {
+        max-width: 100%;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+
+    .post .likes {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        color: #262626;
+    }
+
+    .post .likes svg {
+        fill: #262626;
+        margin-right: 5px;
+    }
+
+    .post .comments {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        color: #999;
+    }
+
+    .post .comments svg {
+        fill: #999;
+        margin-right: 5px;
+    }</style>
+    
+</head>
+<body background-color="">
+    <center><h1 style="font-family: Arial, Helvetica, sans-serif;">Sign</h1>
+    <img src="1_g09N-jl7JtVjVZGcd-vL2g.jpg" height="20%" width="20%"> 
+    <hr>
+    <form action="processar_registro.php" method="post">
+<label for+="nome">Nome Completo:</label>
+<input type="text" id="nome" name="nome" required><br><br>
+
+<form action="processar_registro.php" method="post">
+    <label for+="nome">Senha:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="telefone">Telefone:</label>
+<input type="tel" id="telefone" name="telefone"><br><br>
+
+   
+</select><br><br>
+
+<input type="submit" value="Enviar">
+
+    </form></center></body>
+
+</html>

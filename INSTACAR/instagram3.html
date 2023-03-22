@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+    
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgb(243, 243, 243);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .insta-wrapper {
+        display: flex;
+        align-items: center; 
+        justify-content: start;
+        width: 60%;
+        height: 100vh;
+    }
+    
+    
+    .insta-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    
+    .insta-phone img {
+        height: 50rem;
+    }
+    
+    
+    .insta-logon {
+        display: flex;
+        align-items: center; 
+        justify-content: space-around; 
+        flex-direction: column;
+        width: 50%;
+        min-height: 34rem;    
+    }
+    
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        padding: 1.3rem 0;
+        border: 1px solid lightgray;
+    }
+    
+    
+    .container:nth-child(1) {
+        min-height: 19rem;
+    }
+    
+    
+    .insta-logo {
+        height: 3rem;    
+    }
+    
+    
+    .profile-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden; 
+    }
+    
+    .profile-photo img {
+        height: 6rem;    
+    }
+    
+   
+    .insta-login {
+        background-color: #bb051d; 
+        color: #ffffff; 
+        padding: 8px; 
+        border-radius: 4px; 
+    }
+    
+    
+    .insta-logout {
+        color: #bb051d;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+    
+    
+    .account {
+        color: rgb(160, 160, 160);
+    }
+    
+    .link {
+        color: #bb051d;
+        font-weight: bold;
+    }
+    
+    
+    .get {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1.3rem 0;
+    }
+    
+    
+    .download {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .app-download {
+        height: 3rem;
+        width: 10rem;
+        background-size: cover;
+    }
+    
+    .app-download:nth-child(1) {
+        background-image: url('./assets/apple-button.png');
+    }
+    
+    .app-download:nth-child(2) {
+        background-image: url('./assets/googleplay-button.png');
+    }
+    
+    
+    @media(max-width: 1024px) {
+        .insta-wrapper {
+            width: 90%;
+        }
+    }
+    
+    
+    @media(max-width: 650px) {
+        body {
+            background-color: #ffffff;
+        }
+    
+        .insta-wrapper {
+            width: 90%;        
+        }
+    
+        .insta-car {
+            display: none;
+        }
+    
+        .insta-logon {
+            width: 100%;
+        }
+    
+        .group {
+            border: 1px solid transparent;
+        }
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    
+    <div class="insta-wrapper">
+     
+        <div class="insta-car">
+            <img src="Logo Site.png" alt="image-mobile">
+        </div>
+
+        
+        <div class="insta-logon">
+            
+            <div class="container">
+                <div class="profile-photo">
+                    <img src="perfiloioioioi.jpg" alt="foto-perfil">                    
+                </div>
+                <a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer" class="insta-login">Continuar como Dudu</a>
+                <a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer" class="insta-logout">Remover conta</a>
+            </div>
+
+            
+            <div class="container">
+                <p class="account">Não é Dudu?</p>
+                <p class="account">
+                    <spam class="link">Trocar de conta</spam>
+                    ou
+                    <spam class="link">Cadastre-se</spam>
+                </p>                
+            </div>
+
+            
+            <div class="get">
+                <p class="get-app">Obtenha o aplicativo.</p>
+                
+               
+                <div class="download">
+                    <a target="_blank" href="en_badge_web_generic.png" rel="noopener noreferrer" class="app-download"></a> 
+                    <a target="_blank" href="googleplay-button.png" rel="noopener noreferrer" class="app-download"></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
